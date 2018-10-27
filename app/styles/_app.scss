@@ -1,0 +1,86 @@
+body {
+  background-color: #fff;
+
+  #header {
+    .main-nav {
+      padding: 0 1rem;
+      background-color: $app-primary;
+    }
+  }
+
+  #main {
+    padding: 2rem 0;
+    .main-section {
+      .cards-grid {
+        margin-bottom: 0;
+        .card {
+          color: $app-dark;
+          background-color: $app-light;
+        }
+      }
+    }
+  }
+
+  #add-area {
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    height: 250px;
+    bottom: 0;
+    left: 0;
+    transform: translateY(250px);
+    transition: transform 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+
+    &.open {
+      transform: translateY(0);
+    }
+    .area-header {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      #hide-form-btn {
+        padding: 1.5rem;
+        line-height: 1;
+        cursor: pointer;
+        i::selection {
+          background-color: transparent;
+        }
+        &:hover {
+          i {
+            color: lighten($app-primary, 10%);
+          }
+        }
+        &.disabled {
+          opacity: 0.5;
+          filter: grayscale(80%);
+        }
+      }
+    }
+    .area-body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .form {
+        width: 80%;
+        min-width: 300px;
+        .input-field {
+          .text-input {
+            &:focus {
+              border-bottom: 1px solid $app-success;
+              -webkit-box-shadow: 0 1px 0 0 $app-success;
+              box-shadow: 0 1px 0 0 $app-success;
+              + label {
+                color: $app-success;
+              }
+            }
+          }
+          .prefix.active {
+            color: $app-success;
+          }
+          .helper-text {
+          }
+        }
+      }
+    }
+  }
+}

@@ -13,7 +13,6 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
   <!-- build:css styles/vendor.css -->
-  <link rel="stylesheet" href="/bower_components/materialize/dist/css/materialize.min.css">
   <!-- bower:css -->
   <link rel="stylesheet" href="/bower_components/materialize/dist/css/materialize.css" />
   <!-- endbower -->
@@ -25,7 +24,11 @@
 </head>
 
 <body>
-  <header>
+  <script id="__bs_script__">//<![CDATA[
+    document.write("<script async src='/browser-sync/browser-sync-client.js?v=2.24.7'><\/script>".replace("HOST", location.hostname));
+//]]></script>
+
+  <header id="header">
     <nav class="main-nav">
       <div class="nav-wrapper">
         <a href="#" class="brand-logo">CICE Pocket</a>
@@ -37,14 +40,40 @@
     </nav>
   </header>
 
-  <main>
+  <main id="main">
     <div class="fixed-action-btn">
-      <a id="action-btn" class="btn-floating btn-large waves-effect waves-light red">
+      <a id="show-form-btn" class="btn-floating btn-large waves-effect waves-light btn-primary">
         <i class="material-icons">add</i>
       </a>
     </div>
 
-    <div id="creation-area"></div>
+    <section class="container main-section">
+      <div id="cards-grid" class="row cards-grid">
+      </div>
+    </section>
+
+    <div id="add-area" class="light-bg">
+      <header class="area-header">
+        <span id="hide-form-btn">
+          <i class="small material-icons primary-color">close</i>
+        </span>
+      </header>
+      <section class="area-body">
+        <form id="form-add" class="form">
+          <div class="input-field">
+            <i class="material-icons prefix">language</i>
+            <input placeholder="http://url-to-save.com" id="input-url" type="url" class="validate text-input">
+            <label for="input-url">URL Website</label>
+            <span class="helper-text" data-error="Wrong URL" data-success=""></span>
+          </div>
+          <div class="input-field right-align">
+            <button class="btn btn-success waves-effect waves-light" type="submit" name="action" id="send-form-btn">Submit
+              <i class="material-icons right">send</i>
+            </button>
+          </div>
+        </form>
+      </section>
+    </div>
   </main>
 
   <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->

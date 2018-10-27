@@ -1,0 +1,49 @@
+// $primary: #488aff;
+// $secondary: #32db64;
+// $danger: #f53d3d;
+// $light: #f4f4f4;
+// $dark: #222;
+
+$colors: (
+  primary: #ff5722,
+  secondary: #0d0d0d,
+  info: #2196f3,
+  warning: #f5e33d,
+  success: #388e3c,
+  danger: #f44336,
+  light: #f4f4f4,
+  dark: #222
+);
+
+$app-primary: map-get(
+  $map: $colors,
+  $key: primary
+);
+$app-secondary: map-get(
+  $map: $colors,
+  $key: secondary
+);
+$app-info: map-get(
+  $map: $colors,
+  $key: info
+);
+$app-warning: map-get(
+  $map: $colors,
+  $key: warning
+);
+$app-success: map-get(
+  $map: $colors,
+  $key: success
+);
+$app-danger: map-get(
+  $map: $colors,
+  $key: danger
+);
+$app-light: map-get(
+  $map: $colors,
+  $key: light
+);
+$app-dark: map-get(
+  $map: $colors,
+  $key: dark
+);

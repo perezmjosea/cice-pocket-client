@@ -1,0 +1,159 @@
+// COLORS
+.primary-color {
+  color: $app-primary;
+}
+.secondary-color {
+  color: $app-secondary;
+}
+.info-color {
+  color: $app-info;
+}
+.warning-color {
+  color: $app-warning;
+}
+.success-color {
+  color: $app-success;
+}
+.danger-color {
+  color: $app-danger;
+}
+.light-color {
+  color: $app-light;
+}
+.dark-color {
+  color: $app-dark;
+}
+
+// BACKGROUND COLORS
+.primary-bg {
+  background-color: $app-primary;
+}
+.secondary-bg {
+  background-color: $app-secondary;
+}
+.info-bg {
+  background-color: $app-info;
+}
+.warning-bg {
+  background-color: $app-warning;
+}
+.success-bg {
+  background-color: $app-success;
+}
+.danger-bg {
+  background-color: $app-danger;
+}
+.light-bg {
+  background-color: $app-light;
+}
+.dark-bg {
+  background-color: $app-dark;
+}
+
+// BUTTONS
+.btn-primary {
+  color: $app-light;
+  background-color: $app-primary;
+  &:hover {
+    background-color: lighten($app-primary, 10%);
+  }
+}
+.btn-secondary {
+  color: $app-light;
+  background-color: $app-secondary;
+  &:hover {
+    background-color: lighten($app-secondary, 10%);
+  }
+}
+.btn-info {
+  color: $app-info;
+  background-color: $app-info;
+  &:hover {
+    background-color: lighten($app-info, 10%);
+  }
+}
+.btn-warning {
+  color: $app-light;
+  background-color: $app-warning;
+  &:hover {
+    background-color: lighten($app-warning, 10%);
+  }
+}
+.btn-success {
+  color: $app-light;
+  background-color: $app-success;
+  &:hover {
+    background-color: lighten($app-success, 10%);
+  }
+}
+.btn-danger {
+  color: $app-light;
+  background-color: $app-danger;
+  &:hover {
+    background-color: lighten($app-danger, 10%);
+  }
+}
+.btn-light {
+  color: $app-dark;
+  background-color: $app-light;
+  &:hover {
+    background-color: lighten($app-light, 10%);
+  }
+}
+.btn-dark {
+  color: $app-light;
+  background-color: $app-dark;
+  &:hover {
+    background-color: lighten($app-dark, 10%);
+  }
+}
+
+// LINKS
+.link-primary {
+  color: $app-light !important;
+  &:hover {
+    color: lighten($app-primary, 20%) !important;
+  }
+}
+.link-secondary {
+  color: $app-light !important;
+  &:hover {
+    color: lighten($app-secondary, 20%) !important;
+  }
+}
+.link-info {
+  color: $app-info !important;
+  &:hover {
+    color: lighten($app-info, 20%) !important;
+  }
+}
+.link-warning {
+  color: $app-light !important;
+  &:hover {
+    color: lighten($app-warning, 20%) !important;
+  }
+}
+.link-success {
+  color: $app-light !important;
+  &:hover {
+    color: lighten($app-success, 20%) !important;
+  }
+}
+.link-danger {
+  color: $app-light !important;
+  &:hover {
+    color: lighten($app-danger, 20%) !important;
+  }
+}
+.link-light {
+  color: $app-dark !important;
+  &:hover {
+    color: lighten($app-light, 20%) !important;
+  }
+}
+.link-dark {
+  color: $app-light !important;
+  &:hover {
+    color: lighten($app-dark, 20%) !important;
+  }
+}
